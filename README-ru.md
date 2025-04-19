@@ -11,3 +11,5 @@
 [Католическая Пасха](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Catholic-Easter.js)
 
 [Православная Масленица](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Shrovetide.js)
+
+[Католическая Масленица](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Catholic-Shrovetide.js)
