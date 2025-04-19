@@ -1,4 +1,4 @@
-//Code by github.com/AlexeiCrystal
+//Code by github/AlexeiCrystal
 function calculateOrthodoxEaster(year) {
     const a = year % 19;
     const b = year % 4;
@@ -13,10 +13,29 @@ function calculateOrthodoxEaster(year) {
     }
     const date = new Date(year, month, day);
     date.setDate(date.getDate() + 13);
-  const finalDay = date.getDate();
+    const finalDay = date.getDate();
     const finalMonth = date.getMonth() + 1;
     return `${finalDay}.${finalMonth}`;
 }
 
-console.log(calculateOrthodoxEaster(2025))
-//Input: 2025; output 20.4
+function getOrthodoxEasterDay(year) {
+    const dateStr = calculateOrthodoxEaster(year);
+    return parseInt(dateStr.split('.')[0], 10);
+}
+
+function getOrthodoxEasterMonth(year) {
+    const dateStr = calculateOrthodoxEaster(year);
+    return parseInt(dateStr.split('.')[1], 10);
+}
+
+//Examples
+console.log(calculateOrthodoxEaster(2025)); 
+console.log('\n')
+// Input 2025; Output 20.4
+
+console.log(getOrthodoxEasterDay(2025));
+console.log('\n')
+// Input 2025; Output 20
+
+console.log(getOrthodoxEasterMonth(2025));  
+// Input 2025; Output 4
