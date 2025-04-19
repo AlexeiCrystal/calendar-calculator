@@ -1,3 +1,4 @@
+//code by github.com/AlexeiCrystal
 function orthodoxShrovetideStart(OrthodoxShrovetideYear) {
     const mod19Result = OrthodoxShrovetideYear % 19;
     const mod4Result = OrthodoxShrovetideYear % 4;
@@ -64,7 +65,7 @@ function orthodoxShrovetideEndMonth(year) {
     return parseInt(result[1], 10);
 }
 
-//example
+//examples
 console.log(orthodoxShrovetideStart(2025));
 console.log('\n');
 // Input 2025; Output 24.2
