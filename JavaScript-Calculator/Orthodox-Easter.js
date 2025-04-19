@@ -1,4 +1,4 @@
-//Code by github/AlexeiCrystal
+//Code by github.com/AlexeiCrystal
 function calculateOrthodoxEaster(year) {
     const a = year % 19;
     const b = year % 4;
