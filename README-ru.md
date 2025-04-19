@@ -13,3 +13,5 @@
 [Православная Масленица](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Shrovetide.js)
 
 [Католическая Масленица](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Catholic-Shrovetide.js)
+
+[Православная Троица](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Trinity.js)
