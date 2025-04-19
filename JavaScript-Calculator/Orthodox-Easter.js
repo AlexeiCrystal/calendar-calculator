@@ -1,40 +1,40 @@
 //Code by github.com/AlexeiCrystal
-function calculateOrthodoxEaster(year) {
-    const a = year % 19;
-    const b = year % 4;
-    const c = year % 7;
-    const d = (19 * a + 15) % 30;
-    const e = (2 * b + 4 * c + 6 * d + 6) % 7;
-    let day = 22 + d + e;
-    let month = 2;
-    if (day > 31) {
-        month = 3; 
-        day -= 31;
+function calculateOrthodoxEaster(OrthodoxEasterCalculateYear) {
+    const mod19Result = OrthodoxEasterCalculateYear % 19;
+    const mod4Result = OrthodoxEasterCalculateYear % 4;
+    const mod7Result = OrthodoxEasterCalculateYear % 7;
+    const phase1 = (19 * mod19Result + 15) % 30;
+    const phase2 = (2 * mod4Result + 4 * mod7Result + 6 * phase1 + 6) % 7;
+    let initialDay = 22 + phase1 + phase2;
+    let initialMonth = 2;
+    if (initialDay > 31) {
+        initialMonth = 3; 
+        initialDay -= 31;
     }
-    const date = new Date(year, month, day);
-    date.setDate(date.getDate() + 13);
-    const finalDay = date.getDate();
-    const finalMonth = date.getMonth() + 1;
-    return `${finalDay}.${finalMonth}`;
+    const tempDate = new Date(OrthodoxEasterCalculateYear, initialMonth, initialDay);
+    tempDate.setDate(tempDate.getDate() + 13);
+    const adjustedDay = tempDate.getDate();
+    const adjustedMonth = tempDate.getMonth() + 1;
+    return `${adjustedDay}.${adjustedMonth}`;
 }
 
-function getOrthodoxEasterDay(year) {
-    const dateStr = calculateOrthodoxEaster(year);
-    return parseInt(dateStr.split('.')[0], 10);
+function getOrthodoxEasterDay(OrthodoxEasterCalculateYear) {
+    const orthodoxDateResult = calculateOrthodoxEaster(OrthodoxEasterCalculateYear);
+    return parseInt(orthodoxDateResult.split('.')[0], 10);
 }
 
-function getOrthodoxEasterMonth(year) {
-    const dateStr = calculateOrthodoxEaster(year);
-    return parseInt(dateStr.split('.')[1], 10);
+function getOrthodoxEasterMonth(OrthodoxEasterCalculateYear) {
+    const orthodoxDateResult = calculateOrthodoxEaster(OrthodoxEasterCalculateYear);
+    return parseInt(orthodoxDateResult.split('.')[1], 10);
 }
 
-//Examples
+// Examples
 console.log(calculateOrthodoxEaster(2025)); 
-console.log('\n')
+console.log('\n');
 // Input 2025; Output 20.4
 
 console.log(getOrthodoxEasterDay(2025));
-console.log('\n')
+console.log('\n');
 // Input 2025; Output 20
 
 console.log(getOrthodoxEasterMonth(2025));  
