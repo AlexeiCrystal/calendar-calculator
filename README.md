@@ -14,3 +14,5 @@ In this project I am making code for functions to calculate different dates and 
 [Orthodox Shrovetide](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Shrovetide.js)
 
 [Catholic Shrovetide](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Catholic-Shrovetide.js)
+
+[Orthodox Trinity](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Trinity.js)
