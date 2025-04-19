@@ -1,5 +1,5 @@
 //Code by github.com/AlexeiCrystal
-function calculateOrthodoxEaster(OrthodoxEasterCalculateYear) {
+function orthodoxEaster(OrthodoxEasterCalculateYear) {
     const mod19Result = OrthodoxEasterCalculateYear % 19;
     const mod4Result = OrthodoxEasterCalculateYear % 4;
     const mod7Result = OrthodoxEasterCalculateYear % 7;
@@ -18,24 +18,24 @@ function calculateOrthodoxEaster(OrthodoxEasterCalculateYear) {
     return `${adjustedDay}.${adjustedMonth}`;
 }
 
-function getOrthodoxEasterDay(OrthodoxEasterCalculateYear) {
-    const orthodoxDateResult = calculateOrthodoxEaster(OrthodoxEasterCalculateYear);
+function orthodoxEasterDay(OrthodoxEasterCalculateYear) {
+    const orthodoxDateResult = orthodoxEaster(OrthodoxEasterCalculateYear);
     return parseInt(orthodoxDateResult.split('.')[0], 10);
 }
 
-function getOrthodoxEasterMonth(OrthodoxEasterCalculateYear) {
-    const orthodoxDateResult = calculateOrthodoxEaster(OrthodoxEasterCalculateYear);
+function orthodoxEasterMonth(OrthodoxEasterCalculateYear) {
+    const orthodoxDateResult = orthodoxEaster(OrthodoxEasterCalculateYear);
     return parseInt(orthodoxDateResult.split('.')[1], 10);
 }
 
 // Examples
-console.log(calculateOrthodoxEaster(2025)); 
+console.log(orthodoxEaster(2025)); 
 console.log('\n');
 // Input 2025; Output 20.4
 
-console.log(getOrthodoxEasterDay(2025));
+console.log(orthodoxEasterDay(2025));
 console.log('\n');
 // Input 2025; Output 20
 
-console.log(getOrthodoxEasterMonth(2025));  
+console.log(orthodoxEasterMonth(2025));  
 // Input 2025; Output 4
