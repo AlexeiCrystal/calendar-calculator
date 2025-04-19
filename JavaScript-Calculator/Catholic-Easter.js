@@ -1,5 +1,5 @@
 // Code by github.com/AlexeiCrystal
-function calculateCatholicEaster(CatholicEasterCalculateYear) {
+function catholicEaster(CatholicEasterCalculateYear) {
     const mod19Result = CatholicEasterCalculateYear % 19;
     const centuryQuotient = Math.floor(CatholicEasterCalculateYear / 100);
     const yearInCentury = CatholicEasterCalculateYear % 100;
@@ -20,22 +20,25 @@ function calculateCatholicEaster(CatholicEasterCalculateYear) {
     return `${adjustedDay}.${adjustedMonth}`;
 }
 
-function getCatholicEasterDay(CatholicEasterCalculateYear) {
-    const catholicDateResult = calculateCatholicEaster(CatholicEasterCalculateYear);
+function catholicEasterDay(CatholicEasterCalculateYear) {
+    const catholicDateResult = catholicEaster(CatholicEasterCalculateYear);
     return parseInt(catholicDateResult.split('.')[0], 10);
 }
 
-function getCatholicEasterMonth(CatholicEasterCalculateYear) {
-    const catholicDateResult = calculateCatholicEaster(CatholicEasterCalculateYear);
+function catholicEasterMonth(CatholicEasterCalculateYear) {
+    const catholicDateResult = catholicEaster(CatholicEasterCalculateYear);
     return parseInt(catholicDateResult.split('.')[1], 10);
 }
 
+
 // Example
-console.log(calculateCatholicEaster(2025));
+console.log(catholicEaster(2025));
 console.log('\n');
 //Input 2025; Output 20.4
-console.log(getCatholicEasterDay(2025));    
+
+console.log(catholicEasterDay(2025));    
 console.log('\n');
 // Input 2025; Output 20
-console.log(getCatholicEasterMonth(2025));  
+
+console.log(catholicEasterMonth(2025));  
 // Input 2025; Output 4
