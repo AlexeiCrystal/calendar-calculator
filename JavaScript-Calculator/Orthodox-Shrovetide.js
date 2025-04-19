@@ -1,4 +1,4 @@
-//code by github.com/AlexeiCrystal
+// Code by github.com/AlexeiCrystal
 function orthodoxShrovetideStart(OrthodoxShrovetideYear) {
     const mod19Result = OrthodoxShrovetideYear % 19;
     const mod4Result = OrthodoxShrovetideYear % 4;
