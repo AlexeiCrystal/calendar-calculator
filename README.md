@@ -17,7 +17,7 @@ In this project I am making code for functions to calculate different dates and 
 
 [Orthodox Trinity](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Trinity.js)
 
-[Orthodox Raduinica](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Raduinica.is)
+[Orthodox Raduinica](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Raduinica.js)
 
 
 **Macrodroid**
