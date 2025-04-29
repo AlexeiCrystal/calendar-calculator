@@ -16,4 +16,6 @@
 
 [Православная Троица](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Trinity.js)
 
+[Католическая Троица](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Catholic-Trinity.js)
+
 [Православная Радуница](https://github.com/AlexeiCrystal/calendar-calculator/blob/main/JavaScript-Calculator/Orthodox-Raduinica.js)
